@@ -1,5 +1,26 @@
+.caption h1 {
+    color: white;
+}
+.caption p {
+    color: white;
+}
+.shower {
+    --slide-ratio: calc(16 / 9);
+    --color-key: #2C84EC;
+}
+
+.qr-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.qr {
+    height: 50%;
+}
 .shower.list {
-    background-color: var(--color-blue);
+    background-color: var(--color-key);
 }
 
 li,
@@ -153,7 +174,9 @@ blockquote:before {
     margin-left: 0;
     padding: 20px 0 30px;
     font-size: 62px;
-    border: 1px solid #005dac;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: var(--color-key);
     background: none;
     letter-spacing: -1px;
 }
